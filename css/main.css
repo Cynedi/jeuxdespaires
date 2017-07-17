@@ -73,6 +73,7 @@ div {
   margin-top: 30px;
   border-radius: 3px;
   box-shadow: 1px 1px 8px rgb(29, 29, 29);
+  z-index: 100;
 }
 
 
@@ -84,10 +85,16 @@ div {
 
 }
 
+
+
 .poussinColor {
   background-color: rgb(255, 196, 20);
 }
 
+article {
+  height: 100%;
+  width: 100%;
+}
 
 
 
