@@ -6,12 +6,10 @@ var colorsArray = ["Violet", "DeepPink","GhostWhite","Olive", "Aqua","cadetBlue"
 
  var triage=colorsArray.sort(function(a, b){return 0.5 - Math.random()});
 
-
-var arrays = []
 //récupératiion des cartes avec leurs couleurs d'origine//
 
 var changeColor= document.getElementsByTagName("div");
-console.log(changeColor);
+
 
 var newArray=[];
 
@@ -21,24 +19,24 @@ for (let i=0; i<changeColor.length; i++){
 
 changeColor[i].style.backgroundColor = triage[i];
 
-changeColor[i].onclick=function(){
-
+article.onclick=function(){
 
 //récupération des couleurs cliquées dans un nouveau tableau//
 newArray.push(triage[i]);
-arrays.unshift(changeColor[i]);
-
-arrays[0].classList.remove('poussinColor');//enlever la couleur jaune poussin
-
 
 if (newArray.length===2) {//arriver a 2 cliques//
 
 //comparaison entre la première couleur et la 2eme sur lequel il y a un click//
 
     if (newArray[0]!== newArray[1]) {
-      arrays[0].classList.add('poussinColor');// remet la couleur jaune poussin//
-      arrays[1].classList.add('poussinColor');
-      // console.log(changeColor[i])
+    article.style.display='block';//la couleur jaune poussin reste//
+
+    else {
+      article.style.display="none";//la couleur jaune poussin disparait//
+      parentNode.style.backgroundColor=newArray[i];
+
+    var newArray=[]; //on vide le tableau pour qu'il y ai tjs 2 comparaison//
+    }
 
       }
 
@@ -49,3 +47,5 @@ if (newArray.length===2) {//arriver a 2 cliques//
 }
 
 }
+
+// PS: Rien ne fonctionne :( //
