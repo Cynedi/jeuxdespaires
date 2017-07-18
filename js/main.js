@@ -19,26 +19,27 @@ for (let i=0; i<changeColor.length; i++){
 
 changeColor[i].style.backgroundColor = triage[i];
 
-document.getElementsByClassName('poussinColor').onclick=function(){
+document.getElementsByClassName('poussinColor')[i].onclick=function(){
 
 //récupération des couleurs cliquées dans un nouveau tableau//
 newArray.push(triage[i]);
+document.getElementsByClassName("poussinColor")[i].style.display = "none";
 
 if (newArray.length===2) {//arriver a 2 cliques//
 
 //comparaison entre la première couleur et la 2eme sur lequel il y a un click//
-
+/*
     if (newArray[0]!== newArray[1]) {
-    document.getElementsByClassName('poussinColor').style.display='block';//la couleur jaune poussin reste//
+    document.getElementsByClassName('poussinColor')[i].style.display='block';//la couleur jaune poussin reste//
     } else {
-    document.getElementsByClassName('poussinColor').style.display='none';//la couleur jaune poussin disparait//
-    article.parentNode.style.backgroundColor=newArray[i];// elle est remplacée par la couleur récupérée dans le nouveau tableau//
+    document.getElementsByClassName('poussinColor')[i].style.display='none';//la couleur jaune poussin disparait//
+    document.getElementsByTagName('article')[i].parentNode.style.backgroundColor=newArray[i];// elle est remplacée par la couleur récupérée dans le nouveau tableau//
 
-  var x=setTimeout(2000); //se met en display none au bout de 2 sec//
+    var x=setTimeout(2000); //se met en display none au bout de 2 sec//
 
     var newArray=[]; //on vide le tableau pour qu'il y ai tjs 2 comparaison//
     }
-
+*/
 
 
 

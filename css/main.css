@@ -89,6 +89,8 @@ div {
 
 .poussinColor {
   background-color: rgb(255, 196, 20);
+  border-radius: 3px;
+  box-shadow: 1px 1px 8px rgb(29, 29, 29);
 }
 
 article {
