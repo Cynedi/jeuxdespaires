@@ -11,7 +11,8 @@ var colorsArray = ["Violet", "DeepPink","GhostWhite","Olive", "Aqua","cadetBlue"
 var changeColor= document.getElementsByTagName("div");
 
 
-var newArray=[];
+var tab=[];
+
 
 //Parcours le tableau des cartes et leur met une couleur aléatoire//
 
@@ -22,14 +23,15 @@ changeColor[i].style.backgroundColor = triage[i];
 document.getElementsByClassName('poussinColor')[i].onclick=function(){
 
 //récupération des couleurs cliquées dans un nouveau tableau//
-newArray.push(triage[i]);
+tab.push(triage[i]);
 document.getElementsByClassName("poussinColor")[i].style.display = "none";
+console.log (tab);
 
-if (newArray.length===2) {//arriver a 2 cliques//
+if (tab.length===2) {//arriver a 2 cliques//
 
 //comparaison entre la première couleur et la 2eme sur lequel il y a un click//
-/*
-    if (newArray[0]!== newArray[1]) {
+
+    if (tab[0]!== tab[1]) {
     document.getElementsByClassName('poussinColor')[i].style.display='block';//la couleur jaune poussin reste//
     } else {
     document.getElementsByClassName('poussinColor')[i].style.display='none';//la couleur jaune poussin disparait//
@@ -37,9 +39,9 @@ if (newArray.length===2) {//arriver a 2 cliques//
 
     var x=setTimeout(2000); //se met en display none au bout de 2 sec//
 
-    var newArray=[]; //on vide le tableau pour qu'il y ai tjs 2 comparaison//
+    tab=[]; //on vide le tableau pour qu'il y ai tjs 2 comparaison//
     }
-*/
+
 
 
 
