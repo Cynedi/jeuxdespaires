@@ -63,7 +63,14 @@ body {
 
 #poussinGif {
   width: 70px;
+  margin-bottom: 30px;
+}
 
+#home a {
+color: white;
+display: flex;
+margin: auto;
+width: 45px;
 }
 
 div {
@@ -78,6 +85,7 @@ div {
 
 
 #cards {
+  margin-top: 200px;
   display: flex;
   justify-content: space-around;
   justify-content: flex-start;
@@ -109,7 +117,7 @@ article {
 
 
   h1 {
-    font-size: 60px;
+    font-size: 40px;
 
   }
 
@@ -118,6 +126,17 @@ article {
     min-height: 160px;
     margin-left: 38px;
     margin-top: 30px;
+  }
+
+  #cards {
+    margin-top: 130px;
+  }
+
+#home {
+  height: 80px;
+}
+  #home a {
+    display: none;
   }
 
 }
@@ -130,6 +149,10 @@ article {
     left: 30px;
     width: 120px;
   }
+
+#cards {
+  margin-top: 60px;
+}
 }
 
 @media print,
